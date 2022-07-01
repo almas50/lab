@@ -111,34 +111,6 @@ try:
 except FileExistsError:
     pass
 
-"""
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'default': {
-            'format': '{levelname}, {asctime}, {module}, {process:d}/{thread:d} - {message}',
-            'style': '{',
-        },
-    },
-    'handlers': {
-        'workouts_file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': f'{BASE_DIR.joinpath("logs").joinpath("workouts.log")}',
-            'formatter': 'default',
-        },
-    },
-    'loggers': {
-        'workouts': {
-            'handlers': ['workouts_file'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
-}
-"""
-
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',
